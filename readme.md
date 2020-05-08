@@ -1,35 +1,22 @@
 # Raspberry-Pi Bare Metal Tutorial
 
-![Build Status](https://travis-ci.org/BrianSidebotham/arm-tutorial-rpi.svg?branch=master)
+이 저장소에는 C로 작성된 Raspberry Pi Bare Metal 프로그래밍 코드가 포함되어 있습니다. 튜토리얼의 내용과 코드에 관련된 모든 글은 [valvers.com](https://www.valvers.com/open-software/raspberry-pi/bare-metal-programming-in-c) 및 [github](https://github.com/BrianSidebotham/arm-tutorial-rpi)에 있습니다.
 
-This repository contains the code for the Raspberry-Pi bare-metal programming
-in C series. The home of the tutorial and all of the articles relating to the
-code is at
-[valvers.com](https://www.valvers.com/open-software/raspberry-pi/bare-metal-programming-in-c)
-and [github](https://github.com/BrianSidebotham/arm-tutorial-rpi)
+Linux에서 빌드 할 수 있습니다 - 개발하려는 경우 Windows에서 VM으로 Linux를 사용하거나 데스크톱에 Linux를 설치하여 사용할 수 있습니다.
 
-You can build on linux - because if you're going to develop, you may as well get yourself the ability to use Linux
-whether as a VM on your Windows desktop or as your main desktop.
+> **NOTE**: 이 튜토리얼은 Windows에서 테스트를 했지만 Windows에서 모든 것을 테스트할 수 있는 시간이 없어 제외되었습니다.
 
-> **NOTE**: This tutorial also used to be tested on Windows, but as I don't have any Windows
-installs available any more, or indeed the time available to test everything under Windows it's
-dropped off the list.
+## 시작하기
 
-## Getting Started
+이 저장소를 클론하고 툴체인과 펌웨어를 얻습니다.
 
-Clone this repository and get the toolchain and firmware.
+튜토리얼에 사용된 툴체인은 컴파일러를 다운로드하는 `compiler/get_compiler.sh` 스크립트로 가져올 수 있으므로 Linux 배포판에서 특정 패키지를 설치할 필요가 없습니다.
 
-The toolchain used for the tutorial can be fetched by the `compiler/get_compiler.sh` script which will download the
-compiler locally so you don't need to install any specific packages from your Linux distro.
+마찬가지로, Raspberry Pi 펌웨어도 필요합니다. `firmware/get_firmware_repo.sh` 스크립트를 사용하여 가져올 수 있습니다.
 
-Similarly, the required Raspberry Pi firmware is also stored locally and can be fetched by using the
-`firmware/get_firmware_repo.sh` script.
+튜토리얼을 읽어 재미있게 즐기고, 실험하는 것을 잊지 마세요!
 
-Get reading the tutorial.
-
-Have fun, and remember to experiment!
-
-## Tutorial links (online)
+## 튜토리얼 링크
 
 [Step01 - Getting Started](/part-1/readme.md)
 
@@ -41,13 +28,12 @@ Have fun, and remember to experiment!
 
 [Step05 - Graphics(Basic)](/part-5/readme.md)
 
-## Some interesting links:
+## 흥미로운 링크들
 
-Original [Cambridge Tutorial](http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/index.html) that
-inspired this tutorial series.
+- [Cambridge Tutorial](http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/index.html)
 
-[ARM Instruction Reference](http://infocenter.arm.com/help/topic/com.arm.doc.qrc0001l/QRC0001_UAL.pdf)
+- [ARM Instruction Reference](http://infocenter.arm.com/help/topic/com.arm.doc.qrc0001l/QRC0001_UAL.pdf)
 
-[Circle C++ Bare Metal Environment for RPI](https://github.com/rsta2/circle)
+- [Circle C++ Bare Metal Environment for RPI](https://github.com/rsta2/circle)
 
-[Newlib C-Library documentation](https://sourceware.org/newlib/libc.html)
+- [Newlib C-Library documentation](https://sourceware.org/newlib/libc.html)
